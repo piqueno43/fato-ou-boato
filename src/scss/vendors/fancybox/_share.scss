@@ -1,0 +1,96 @@
+  /* Share */
+
+  .fancybox-share {
+    background: #f4f4f4;
+    border-radius: 3px;
+    max-width: 90%;
+    padding: 30px;
+    text-align: center;
+
+    h1 {
+      color: #222;
+      font-size: 35px;
+      font-weight: 700;
+      margin: 0 0 20px 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__button {
+    border: 0;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0 5px 10px 5px;
+    min-width: 130px;
+    padding: 0 15px;
+    text-decoration: none;
+    transition: all .2s;
+    user-select: none;
+    white-space: nowrap;
+    }
+
+  &__button:visited,
+  &__button:link {
+    color: #fff;
+  }
+
+  &__button:hover {
+    text-decoration: none;
+  }
+
+  &__button--fb {
+    background: #3b5998;
+  }
+
+  &__button--fb:hover {
+    background: #344e86;
+  }
+
+  &__button--pt {
+    background: #bd081d;
+  }
+
+  &__button--pt:hover {
+    background: #aa0719;
+  }
+
+  &__button--tw {
+    background: #1da1f2;
+  }
+
+  &__button--tw:hover {
+    background: #0d95e8;
+  }
+
+  &__button svg {
+    height: 25px;
+    margin-right: 7px;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    width: 25px;
+  }
+
+  &__button svg path {
+    fill: #fff;
+  }
+
+  &__input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #d7d7d7;
+    border-radius: 0;
+    color: #5d5b5b;
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+  }
+}

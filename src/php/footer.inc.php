@@ -9,7 +9,7 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/TweenMax.min.js"></script>
     <script src="js/clipboard.min.js"></script>
-    <script src="js/menuspy.js"></script>
+    <script src="js/menuspy.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/share.js"></script>
     <script src="js/collapse.js"></script>

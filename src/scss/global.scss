@@ -1,11 +1,12 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 
-@import "../../node_modules/bootstrap/scss/reboot";
-@import "../../node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
 
 @import "variables";
+@import "wrapper";
 
 * {
   margin: 0;
@@ -20,36 +21,3 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.wrapper,
-.wrapper-fluid {
-  @include make-container();
-}
-
-.line {
-  @include make-row();
-}
-
-@each $breakpoint, $wrapper-max-width in $container-max-widths {
-  .wrapper-#{$breakpoint} {
-    @extend .wrapper-fluid;
-  }
-
-  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
-    %responsive-wrapper-#{$breakpoint} {
-      max-width: $wrapper-max-width;
-    }
-    $extend-breakpoint: true;
-
-    @each $name, $width in $grid-breakpoints {
-      @if ($extend-breakpoint) {
-        .wrapper#{breakpoint-infix($name, $grid-breakpoints)} {
-          @extend %responsive-wrapper-#{$breakpoint};
-        }
-
-        @if ($breakpoint == $name) {
-          $extend-breakpoint: false;
-        }
-      }
-    }
-  }
-}
