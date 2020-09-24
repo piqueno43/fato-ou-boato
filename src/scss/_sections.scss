@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  color: $text-color;
+  background-color: $body-bg;
+  -webkit-font-smoothing: antialiased;
+}
+.section {
+  &-title {
+    font-family: $font-geral;
+    font-weight: bold;
+    color: theme-color(verde-claro);
+
+    @include media-breakpoint-up(xs) {
+      font-size: 1.875rem;
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 2.5rem;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &-description {
+    font-family: $font-geral;
+    color: $text-color;
+
+    @include media-breakpoint-up(xs) {
+      font-size: 1rem;
+    }
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.125rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+

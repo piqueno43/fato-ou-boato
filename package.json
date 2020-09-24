@@ -1,0 +1,29 @@
+{
+  "name": "fato-ou-boato",
+  "version": "1.0.0",
+  "main": "index.php",
+  "author": "Edivaldo Silva",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp",
+    "stylelint-check": "stylelint-config-prettier-check"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "gulp": "3.9.1",
+    "gulp-sass": "^4.1.0",
+    "prettier": "2.1.2",
+    "sass": "^1.26.10",
+    "stylelint": "^13.7.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-prettier": "^1.1.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-php2html": "^1.0.0"
+  }
+}

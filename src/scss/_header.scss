@@ -1,0 +1,58 @@
+.header {
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 0 10px;
+  color: $text-color;
+
+  @include item(body) {
+    display: flex;
+    padding: 10px 5px;
+    align-items: center;
+
+    @include media-breakpoint-up(xs) {
+      flex-direction: column;
+    }
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+    }
+  }
+
+  @include item(title) {
+    margin-bottom: 0;
+    display: flex;
+
+  span {
+    font-weight: bold;
+    padding:  5px 15px;
+    border-radius: 25px;
+
+      &.color-fato {
+        background-color: rgba(71, 199, 125, .2);
+        color: theme-color(verde-claro);
+      }
+
+      &.color-boato {
+        background-color: rgba(234, 80, 92, .2);
+        color: theme-color(vermelho);
+      }
+    }
+  }
+
+  @include item(text) {
+    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(xs) {
+      font-size: 1rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.625rem;
+      border-left: 1px solid $border-color;
+      margin-left: 15px;
+      padding-left: 25px;
+    }
+  }
+}

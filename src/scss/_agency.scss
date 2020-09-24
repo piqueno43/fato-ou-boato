@@ -1,0 +1,155 @@
+.agency {
+  @extend .card;
+  font-size: 1.25rem;
+  color: $text-color;
+  background-color: transparent;
+  border: none;
+
+  &-columns {
+    @extend .card-columns;
+  }
+
+  &-body {
+    @extend .card-body;
+
+    @include media-breakpoint-up(xs) {
+      padding: 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 15px;
+    }
+  }
+
+  &-intro {
+    font-family: $font-title;
+    color:$text-color;
+
+    @include media-breakpoint-up(xs) {
+      font-size: 1.2rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 2.125rem;
+    }
+  }
+
+  &-text {
+    @include media-breakpoint-up(xs) {
+      font-size: 1rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &-video {
+    position: relative;
+
+
+  }
+
+  &-icon {
+    position: absolute;
+    left: 50%;
+    right: 100%;
+    top: 50%;
+    bottom: 100%;
+  }
+
+  &-deck {
+      width: 100%;
+      display: grid;
+      padding: 0;
+
+      @include media-breakpoint-up(xs) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: .25em;
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d";
+      }
+
+
+      @include media-breakpoint-up(md) {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 1em;
+        grid-template-areas:
+        "a  b"
+        "c d";
+      }
+
+      @include media-breakpoint-up(lg) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1em;
+        grid-template-areas:
+        "a  b c";
+      }
+
+      &-item {
+        @extend .card;
+        min-height: 100px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:nth-child(1) {
+          grid-area: a;
+        }
+
+        &:nth-child(2) {
+          grid-area: b;
+        }
+
+        @include media-breakpoint-only(lg) {
+          &:nth-child(3) {
+            grid-area: c;
+          }
+
+          &:nth-child(4) {
+            grid-area: d;
+          }
+        }
+
+        img {
+          @include img-fluid;
+
+        }
+      }
+  }
+
+  &-row {
+    @include make-row(0);
+  }
+
+  &-col-intro {
+    @include make-col-ready(0);
+
+    @include media-breakpoint-up(xs){
+      @include make-col(12);
+    }
+
+    @include media-breakpoint-up(lg){
+      @include make-col(5);
+    }
+  }
+
+  &-col-content {
+    @include media-breakpoint-up(xs){
+      @include make-col-ready(0);
+      @include make-col(12);
+    }
+
+    @include media-breakpoint-up(lg){
+      @include make-col-ready();
+      @include make-col(7);
+    }
+  }
+}

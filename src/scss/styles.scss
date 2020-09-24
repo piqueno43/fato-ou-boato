@@ -1,0 +1,47 @@
+@import "variables";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+$theme-colors: map-remove($theme-colors, "primary", "secondary", "success", "danger", "warning", "info", "light", "dark");
+
+$theme-colors: (
+  "verde-claro": $primary,
+  "vermelho": $vermelho,
+  "branco": #fff,
+);
+
+$link-color: theme-color('verde-claro');
+
+
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/button-group";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/input-group";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/badge";;
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/list-group";
+
+@import "mixins/mixins";
+@import "sections";
+@import "modal";
+@import "share";
+@import "header";
+@import "spotlight";
+@import "navigation";
+@import "check";
+@import "question";
+@import "agency";
+@import "urnas";
+@import "minute-check";
+@import "list";
+
+
+
+

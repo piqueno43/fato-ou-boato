@@ -1,0 +1,208 @@
+$spotlight : 'spotlight';
+
+.#{$spotlight}s {
+  width: calc(100% - 2em);
+  display: grid;
+
+  width: 100%;
+
+  @include media-breakpoint-up(xs) {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    grid-gap: 0.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "a"
+        "b"
+        "c";
+  }
+
+  @include media-breakpoint-up(lg) {
+      margin-bottom: 1.5em;
+      margin-top: 1.5em;
+      grid-gap: 1.5em;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "a  b"
+        "a  c";
+  }
+
+  &.#{$spotlight}-larger {
+      grid-template-areas:
+    "a  b"
+    "a  b";
+
+    .#{$spotlight} {
+      &:before {
+        padding-bottom: 618px;
+      }
+
+      &:nth-child(2) {
+
+        .#{$spotlight}-title {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
+.#{$spotlight} {
+  width: 100%;
+  position: relative;
+  transition: all 0.25s ease;
+  font-family: $font-title;
+  font-weight: 300;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    height: 0;
+
+    @include media-breakpoint-up(xs) {
+      padding-bottom: calc(600px - 50%);
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-bottom: calc(575px - 50%);
+    }
+  }
+
+  &:nth-child(1) {
+    grid-area: a;
+    .#{$spotlight}-title {
+      @include media-breakpoint-up(xs) {
+        font-size: 1.25rem;
+      }
+
+      @include media-breakpoint-up( lg) {
+        font-size: 2.1875rem;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    grid-area: b;
+  }
+
+  &:nth-child(3) {
+    grid-area: c;
+  }
+
+  &-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+  }
+
+  &-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-title {
+    padding: 10px 0;
+    color: #fff;
+    font-size: 1.375rem;
+    font-family: $font-title;
+    font-weight: bold;
+    text-shadow: 0px 1px 5px rgba(0,0,0,.5);
+    z-index: 5;
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  &-video {
+    position: absolute;
+
+    z-index: 1;
+
+    @include media-breakpoint-up(xs) {
+      top: 10px;
+      right: 10px;
+
+      img {
+        max-height: 35px;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      left: 50%;
+      top: calc(575px - 50%);
+    }
+  }
+
+  &-actions {
+    position: absolute;
+    top: .75em;
+    left: .75em;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: black;
+  }
+
+  &-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    position: relative;
+
+    @include media-breakpoint-only(xs){
+      margin-right: -15px;
+      margin-left: -15px;
+      margin-bottom: -10px;
+    }
+
+    .#{$spotlight}-label {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      background: #fff;
+      padding: 0.75em;
+      min-height: 55px;
+    }
+
+    img {
+      max-height: 35px;
+      transform: scale(1);
+      transition: .3s ease-in-out;
+
+      &:hover {
+      	transform: scale(1.1);
+      }
+    }
+  }
+
+}

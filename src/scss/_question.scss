@@ -1,0 +1,60 @@
+.question {
+  @extend .card;
+  font-size: 1.25rem;
+  color: $text-color;
+  background-color: transparent;
+  border: none;
+
+  &-body {
+    @extend .card-body;
+
+    @include media-breakpoint-up(xs) {
+      padding: 0;
+    }
+    @include media-breakpoint-up(lg){
+      padding: 0 15px;
+    }
+  }
+
+  &-row {
+    @include make-row(0);
+  }
+  &-col-img {
+    @extend .card-img;
+
+    img {
+      @include img-fluid;
+    }
+
+    @include make-col-ready(0);
+    @include media-breakpoint-up(sm){
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(md){
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(lg){
+      @include make-col(5);
+    }
+  }
+  &-col-content {
+    @include make-col-ready(0);
+    @include make-col(12);
+    &.has-img {
+      @include make-col-ready();
+      @include media-breakpoint-up(sm){
+        @include make-col(12);
+      }
+      @include media-breakpoint-up(md){
+        @include make-col(6);
+      }
+      @include media-breakpoint-up(lg){
+        @include make-col(7);
+      }
+    }
+  }
+
+  &-text {
+    font-size: 1.125rem;
+  }
+}

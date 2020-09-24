@@ -1,0 +1,44 @@
+.sticky-top {
+  @supports (position: sticky) {
+    position: sticky;
+    top: 0;
+    z-index: $zindex-sticky;
+  }
+}
+.menu {
+  position: relative;
+  z-index: 3;
+}
+.nav {
+  background-color:$bg-block;
+
+  @include media-breakpoint-between(sm, lg) {
+    border: 5px solid $border-color;
+  }
+
+  .nav-link {
+    color: $text-color;
+    position: relative;
+    z-index: 3;
+  }
+
+  .active {
+    position: relative;
+
+    @include media-breakpoint-up(sm) {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        height: 2px;
+        width: 100%;
+        background-color:  theme-color(verde-claro);
+        display: block;
+        }
+      }
+
+    .nav-link {
+      background-color: rgba(71, 199, 125, .2);
+    }
+  }
+}

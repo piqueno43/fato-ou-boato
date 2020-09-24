@@ -1,0 +1,63 @@
+.minute {
+  @extend .card;
+  padding: 20px 10px 20px 10px;
+  min-height: 225px;
+
+  &-columns {
+    @extend .card-columns;
+
+    @include media-breakpoint-up(xs){
+      columns: 1;
+    }
+
+    @include media-breakpoint-up(sm){
+      columns: 2;
+    }
+    @include media-breakpoint-up(lg){
+      columns: 4;
+    }
+  }
+
+  &-body {
+    @extend .card-body;
+  }
+
+  &-img-overlay {
+    @extend .card-img-overlay;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25%;
+  }
+
+  &-img-top {
+    @extend .card-img-top;
+  }
+
+  &-title {
+    color: $text-color;
+    text-align: center;
+  }
+
+  &-icon img {
+    height: 36px;
+  }
+
+  &-link {
+    @extend .btn, .btn-branco, .btn-block;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(xs){
+      width: 100%;
+    }
+
+    @include media-breakpoint-between(sm, md){
+      width: 75%;
+    }
+
+    @include media-breakpoint-up(lg){
+      width: 50%;
+    }
+  }
+}

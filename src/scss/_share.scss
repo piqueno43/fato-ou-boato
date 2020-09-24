@@ -1,0 +1,133 @@
+.socialShare {
+  width: 100%;
+  margin-top: 5px;
+  margin-left: 5px;
+
+  .btn ,
+  > .socialBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+  }
+
+  .btn {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  > * > span {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: theme-color("primary");
+    font-size: 0.875rem;
+    line-height: 14px;
+    width: 26px;
+    height: 26px;
+    // padding: 14px;
+    text-align: center;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all .35s ease-in-out;
+    width: 25px;
+    height: 25px;
+
+  &.open,
+  &:hover{
+      transform: scale(1.25);
+      transition: all .15s ease-in-out;
+      text-decoration: none;
+    }
+    &.open {
+      width: 100%;
+      border-radius: 0;
+      background-color: #fff;
+    }
+  }
+}
+.socialGallery {
+  visibility: visible;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .btn {
+    visibility: hidden;
+    opacity: 0;
+    font-size: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.15);
+    position: relative;
+    top: 10px;
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+
+    &:hover{
+      text-decoration: none;
+    }
+
+    > span {
+      position: relative;
+      top: 5px;
+      left: 5px;
+      border-radius: 50%;
+    }
+  }
+  .socialToolBox {
+    cursor: default;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 7.5px;
+  }
+
+  .pointer {
+    cursor: pointer
+  }
+
+  .facebook:hover {
+    background: #4267B2
+  }
+
+  .google:hover {
+    background: #dd4b39;
+  }
+
+  .instagram:hover {
+    background: #E1306C;
+  }
+
+  .tumblr:hover {
+    background: #32506d;
+  }
+
+  .twitter:hover {
+    background: #1DA1F2;
+  }
+
+  .youtube:hover {
+    background: #bb0000;
+  }
+  .email:hover {
+    background: #444;
+  }
+  .whatsapp:hover {
+    background: #128C7E;
+  }
+
+  @include media-breakpoint-only(xs) {
+    .socialGallery {
+      width: 120px;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+#shareModal {
+  > .row {
+    @include make-row();
+  }
+
+  .icon-container {
+    display: flex;
+  }
+
+  .mt-100 {
+    margin-top: 100px
+  }
+
+  .modal {
+      background-image: linear-gradient(rgb(35, 79, 71) 0%, rgb(36, 121, 106) 100.2%)
+  }
+
+  .modal-title {
+      font-weight: 900;
+      color: theme-color(verde-claro);
+  }
+
+  .modal-content {
+      border-radius: 13px
+  }
+
+  .modal-body {
+      color: #3b3b3b
+  }
+
+  .img-thumbnail {
+    padding: $thumbnail-padding;
+    background-color: $thumbnail-bg;
+    border: $thumbnail-border-width solid $thumbnail-border-color;
+    @include border-radius($thumbnail-border-radius);
+    @include box-shadow($thumbnail-box-shadow);
+
+    // Keep them at most 100% wide
+    @include img-fluid();
+      border-radius: 33px;
+      width: 61px;
+      height: 61px
+  }
+
+  > .btn {
+    padding: 0;
+  }
+
+  .fa:before {
+    position: relative;
+    top: 10px
+  }
+
+
+  .smd {
+      width: 200px;
+      font-size: 0.75rem;
+      text-align: center;
+      margin-bottom: 0;
+      margin-top: 5px;
+  }
+
+  .modal-footer {
+      display: block;
+      label {
+        color: theme-color(verde-claro);
+      }
+
+      .fa:before {
+        position: relative;
+        top: 13px
+    }
+  }
+
+
+  .ur {
+    @include make-col-ready();
+      @include make-col(10);
+      border: none;
+      background-color: $body-bg;
+      border-bottom-left-radius: 4px;
+      border-top-left-radius: 4px;
+      height: 40px;
+  }
+
+  .cpy {
+      border: none;
+      background-color: $body-bg;
+      border-bottom-right-radius: 4px;
+      border-top-right-radius: 4px;
+      cursor: pointer
+  }
+
+  button.focus,
+  button:focus {
+      outline: 0;
+      box-shadow: none !important
+  }
+
+  .ur.focus,
+  .ur:focus {
+      outline: 0;
+      box-shadow: none !important
+  }
+
+  .message {
+      font-size: 0.875rem;
+      color: $vermelho;
+  }
+
+  .btn-toolbar .input-group {
+    width: 100%;
+
+    .fa {
+      position: relative;
+      top: -12px;
+    }
+  }
+}

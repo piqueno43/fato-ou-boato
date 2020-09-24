@@ -1,0 +1,83 @@
+.urna {
+  @extend .card;
+  margin-bottom: 15px;
+  border-radius: 10px!important;
+
+  &-header {
+    @extend .card-header;
+    background-color: transparent;
+  }
+
+  &-body {
+    @extend .card-body;
+    font-family: $font-geral;
+    color: #6B6B6B;
+
+    @include media-breakpoint-up(xs) {
+      font-size: 1rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.25rem;
+    }
+
+  }
+
+  &-title {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+
+    .btn {
+      padding: 0;
+      text-align: left;
+      font-family: $font-geral;
+      color: #6B6B6B;
+
+      @include media-breakpoint-up(xs){
+        font-size: 1.2rem;
+      }
+
+      @include media-breakpoint-up(lg){
+        font-size: 1.875rem;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &::after{
+        font-family:'FontAwesome';
+        content:"\f068";
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: theme-color(verde-claro);
+        border-radius: 50%;
+        background-color: rgba(71, 199, 125, .2);
+
+        @include media-breakpoint-up(xs) {
+          width: 23px;
+          height: 23px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          width: 46px;
+          height: 46px;
+        }
+      }
+
+      &.collapsed {
+        &::after {
+          content:"\f067";
+        }
+      }
+    }
+
+
+
+  }
+}
