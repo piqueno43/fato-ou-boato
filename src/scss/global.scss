@@ -6,7 +6,19 @@
 @import "../../node_modules/bootstrap/scss/type";
 
 @import "variables";
-@import "mixins/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  color: $text-color;
+  background-color: $body-bg;
+  -webkit-font-smoothing: antialiased;
+}
 
 .wrapper,
 .wrapper-fluid {

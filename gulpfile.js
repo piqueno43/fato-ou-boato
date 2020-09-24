@@ -35,6 +35,13 @@ gulp.task("css", function () {
     .pipe(gulp.dest("css"))
     .pipe(browserSync.stream());
 });
+// move js
+gulp.task("fonts", function () {
+  return gulp
+    .src("src/fonts/**")
+    .pipe(gulp.dest("fonts"))
+    .pipe(browserSync.stream());
+});
 // move images
 gulp.task("images", function () {
   return gulp
@@ -43,7 +50,7 @@ gulp.task("images", function () {
     .pipe(browserSync.stream());
 });
 // Static Server + watching scss/html files
-gulp.task("serve", ["sass", "js", "images", "css"], function () {
+gulp.task("serve", ["sass", "js", "images", "css", "fonts"], function () {
   connect.server({}, function () {
     browserSync({
       proxy: "127.0.0.1:8000",

@@ -4,12 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fato ou boato</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
-  <link rel="stylesheet" href="css/global.css" />
-  <link rel="stylesheet" href="css/je.css" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/je.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
 
   <meta property="og:url"         content="https://www.justicaeleitoral.jus.br/index.html" />
   <meta property="og:type"        content="website" />

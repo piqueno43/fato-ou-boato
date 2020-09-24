@@ -29,18 +29,20 @@ $link-color: theme-color('verde-claro');
 @import "../../node_modules/bootstrap/scss/list-group";
 
 @import "mixins/mixins";
-@import "sections";
-@import "modal";
-@import "share";
-@import "header";
-@import "spotlight";
-@import "navigation";
-@import "check";
-@import "question";
-@import "agency";
-@import "urnas";
-@import "minute-check";
-@import "list";
+
+@import "fato-ou-boato/fonts";
+@import "fato-ou-boato/sections";
+@import "fato-ou-boato/modal";
+@import "fato-ou-boato/share";
+@import "fato-ou-boato/header";
+@import "fato-ou-boato/spotlight";
+@import "fato-ou-boato/navigation";
+@import "fato-ou-boato/check";
+@import "fato-ou-boato/question";
+@import "fato-ou-boato/agency";
+@import "fato-ou-boato/urnas";
+@import "fato-ou-boato/minute-check";
+@import "fato-ou-boato/list";
 
 
 
