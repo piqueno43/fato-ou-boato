@@ -4,11 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fato ou boato</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link id="tag-meta-plone">
+  <link id="tag-link-plone">
+  <link id="tag-style-plone">
+  <link id="claimreview">
+
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/fancybox.css"/>
   <link rel="stylesheet" href="css/global.css"/>
   <link rel="stylesheet" href="css/je.css"/>
-  <link rel="stylesheet" href="css/fato-ou-boato.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
 
   <meta property="og:url"         content="https://www.justicaeleitoral.jus.br/index.html" />
   <meta property="og:type"        content="website" />

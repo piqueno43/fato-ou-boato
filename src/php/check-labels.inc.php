@@ -3,15 +3,15 @@ foreach ($checagen['label'] as $key => $label) :
   if($label === 'lupa') :
 ?>
 <div class="check-label">
-  <a target="_blank" href="https://piaui.folha.uol.com.br/lupa"><img src="imagens/logos/lupa@2x.png" alt="Agência Lupa" title="Agência Lupa" /></a>
+  <a target="_blank" href="https://piaui.folha.uol.com.br/lupa"><img src="imagens/logos/lupa.png" alt="Agência Lupa" title="Agência Lupa" /></a>
 </div>
 <?php endif; if($label === 'estadao') : ?>
   <div class="check-label">
-    <a target="_blank" href="https://politica.estadao.com.br/blogs/estadao-verifica"><img src="imagens/logos/estadao@2x.png" alt="Estadão Verifica" title="Estadão Verifica" /></a>
+    <a target="_blank" href="https://politica.estadao.com.br/blogs/estadao-verifica"><img src="imagens/logos/estadao.png" alt="Estadão Verifica" title="Estadão Verifica" /></a>
   </div>
 <?php endif; if($label === 'holofote') : ?>
 <div class="check-label">
-  <a target="_blank" href="https://www.correiobraziliense.com.br/holofote"><img src="imagens/logos/holofote@2x.png" alt="Holofote" title="Holofote" /></a>
+  <a target="_blank" href="https://www.correiobraziliense.com.br/holofote"><img src="imagens/logos/holofote.png" alt="Holofote" title="Holofote" /></a>
 </div>
 <?php endif; if($label === 'afp') : ?>
 <span class="separator"></span>
@@ -20,7 +20,7 @@ foreach ($checagen['label'] as $key => $label) :
 </div>
 <?php endif; if($label === 'efarsas') : ?>
 <div class="check-label">
-  <a target="_blank" href="https://www.e-farsas.com"><img src="imagens/logos/e-farsas@2x.png" alt="E-Farsas" title="E-Farsas" /></a>
+  <a target="_blank" href="https://www.e-farsas.com"><img src="imagens/logos/e-farsas.png" alt="E-Farsas" title="E-Farsas" /></a>
 </div>
 <?php endif; if($label === 'comprova') : ?>
 <div class="check-label">
@@ -33,11 +33,11 @@ foreach ($checagen['label'] as $key => $label) :
 </div>
 <?php endif; if($label === 'aos-fatos') : ?>
 <div class="check-label">
-  <a target="_blank" href="https://www.aosfatos.org"><img src="imagens/logos/aos-fatos@2x.png" alt="Aos Fatos" title="Aos Fatos" /></a>
+  <a target="_blank" href="https://www.aosfatos.org"><img src="imagens/logos/aos-fatos.png" alt="Aos Fatos" title="Aos Fatos" /></a>
 </div>
 <?php endif; if($label === 'fato-ou-fake') : ?>
 <div class="check-label">
-  <a target="_blank" href="https://g1.globo.com/fato-ou-fake"><img src="imagens/logos/fato-fake@2x.png" alt="Fato ou Fake" title="Fato ou Fake" /></a>
+  <a target="_blank" href="https://g1.globo.com/fato-ou-fake"><img src="imagens/logos/fato-fake.png" alt="Fato ou Fake" title="Fato ou Fake" /></a>
 </div>
 <?php endif;?>
 <?php endforeach; ?>

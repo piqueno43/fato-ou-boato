@@ -8,7 +8,7 @@
 	color: #FFF;
 	padding-top: 40px;
   padding-bottom: 50px;
-  padding-left: 0;
+  padding-left: 0!important;
   padding-right: 0;
 
   &::before{
@@ -21,8 +21,8 @@
   }
 
   &-logo {
-    @include make-col-ready();
     @include media-breakpoint-up(lg) {
+      @include make-col-ready(0);
       @include make-col(12);
     }
 

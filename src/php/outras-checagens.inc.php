@@ -2,14 +2,14 @@
 $agencias = [
   'tse'     => ['title'=> 'Tribunal Superior Eleitoral', 'link'=> 'https://www.tse.jus.br', 'img'=> 'tse.png'],
   'lupa'    => ['title'=> 'Lupa', 'link'=> 'https://piaui.folha.uol.com.br/lupa', 'img'=> 'lupa.png'],
-  'estadao' => ['title'=> 'Estadão Verifica', 'link'=> 'https://politica.estadao.com.br/blogs/estadao-verifica', 'img'=> 'estadao@2x.png'],
-  'efarsas' => ['title'=> 'E-Farsas', 'link'=> 'https://www.e-farsas.com', 'img'=> 'e-farsas@2x.png'],
-  'holofote'=> ['title'=> 'Holofote', 'link'=> 'https://www.correiobraziliense.com.br/holofote', 'img'=> 'holofote@2x.png'],
+  'estadao' => ['title'=> 'Estadão Verifica', 'link'=> 'https://politica.estadao.com.br/blogs/estadao-verifica', 'img'=> 'estadao.png'],
+  'efarsas' => ['title'=> 'E-Farsas', 'link'=> 'https://www.e-farsas.com', 'img'=> 'e-farsas.png'],
+  'holofote'=> ['title'=> 'Holofote', 'link'=> 'https://www.correiobraziliense.com.br/holofote', 'img'=> 'holofote.png'],
   'afp'     => ['title'=> 'AFP', 'link'=> 'https://www.afp.com/pt', 'img'=> 'logo-afp.svg'],
   'comprova'=> ['title'=> 'Comprova', 'link'=> 'https://projetocomprova.com.br', 'img'=> 'comprova.svg'],
   'uol'     => ['title'=> 'UOL Confere', 'link'=> 'https://noticias.uol.com.br/confere', 'img'=> 'uol.png'],
-  'aos'     => ['title'=> 'Aos Fatos', 'link'=> 'https://www.aosfatos.org', 'img'=> 'aos-fatos@2x.png'],
-  'fatofake'=> ['title'=> 'Fato ou Fake', 'link'=> 'https://g1.globo.com/fato-ou-fake', 'img'=> 'fato-fake@2x.png'],
+  'aos'     => ['title'=> 'Aos Fatos', 'link'=> 'https://www.aosfatos.org', 'img'=> 'aos-fatos.png'],
+  'fatofake'=> ['title'=> 'Fato ou Fake', 'link'=> 'https://g1.globo.com/fato-ou-fake', 'img'=> 'fato-fake.png'],
 ];
 
 $outrasChecagens = [

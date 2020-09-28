@@ -1,7 +1,18 @@
 .section {
+  &-nav {
+    @include media-breakpoint-up(xs) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
   &-title {
-    font-family: $font-geral;
-    font-weight: bold;
+    font-family: $font-geral-bold;
     color: theme-color(verde-claro);
 
     @include media-breakpoint-up(xs) {

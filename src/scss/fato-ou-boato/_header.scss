@@ -39,7 +39,8 @@
     }
   }
 
-  @include item(text) {
+  &-text {
+    font-family: $font-geral-light;
     font-weight: lighter;
     margin-top: 0;
     margin-bottom: 0;
